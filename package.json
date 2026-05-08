@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "clip da coupons automatically",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "tsx clipper.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,7 +13,12 @@
   "dependencies": {
     "@types/node": "^25.6.2",
     "playwright": "^1.59.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
   }
 }
